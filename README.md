@@ -1,16 +1,39 @@
 # Self_Driving_Car
+
 Self Driving Car with Obstacle Detection and Lane Detection using OpenCV and Python
 
-# USAGE:
+## Installation
 
-    Step1:  Install all the Required Libraries mentioned in the requirements.txt
-    Step2:  Run main.py 
-    
-#Sidenote:
-    if you want to use Webcam as the video source,
-            
-        CHANGE FROM:
-              LINE-260 from "cap = cv2.VideoCapture(video_path)"
-        CHANGE TO:
-              LINE-260 from "cap = cv2.VideoCapture(0)"
-            
+(Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the Pre-requisites.)
+
+In order to install the libraries using pip, open the command prompt/terminal and execute the command given below
+
+```bash
+pip3 install -r requirements.txt
+```
+
+## Usage
+
+```bash
+python3 main.py
+```
+
+## Sidenote
+```python
+To Change Video Feed (Video File / Webcam):
+
+# for Reading frames from video file:
+cap = cv2.VideoCapture(video_path) 
+
+# for Reading frames from webcam:
+cap = cv2.VideoCapture(0)
+```
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
